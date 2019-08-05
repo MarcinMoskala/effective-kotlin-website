@@ -1,0 +1,191 @@
+$font-family: "Segoe UI", "Open Sans", Roboto, sans-serif;
+$base-font-size: 18px;
+$base-font-color: #404040;
+$base-line-height: 1.3;
+$corporate-blue: #137cb9;
+$corporate-orange: #f47421;
+$background-color: #e7ecef;
+$menu-height: 70px;
+
+@mixin background-size($property) {
+    -webkit-background-size: $property;
+    -moz-background-size: $property;
+    -o-background-size: $property;
+    background-size: $property;
+}
+
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+    -ms-flex-pack: $justify;
+}
+
+@mixin align-items($align) {
+    -webkit-align-items: $align;
+    -moz-align-items: $align;
+    -ms-align-items: $align;
+    align-items: $align;
+}
+
+@mixin flex-flow($flow) {
+    -webkit-flex-flow: $flow;
+    -moz-flex-flow: $flow;
+    -ms-flex-flow: $flow;
+    flex-flow: $flow;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex-basis: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+     -moz-flex-basis: $width;
+      -ms-flex-basis: $width;
+          flex-basis: $width;
+}
+
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+  -moz-align-self: $align;
+  -ms-align-self: $align;
+  align-self: $align;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+	  font-family: $font-family;
+	  font-size: $base-font-size;
+	  line-height: $base-line-height;
+	  font-weight: 400;
+	  color: $base-font-color;
+		letter-spacing: normal;
+}
+
+h1 {
+	  color: $corporate-blue;
+	  font-size: $base-font-size * 3;
+	  margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+	  color: $corporate-blue;
+	  font-size: $base-font-size * 2;
+	  margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+	  color: $corporate-blue;
+	  font-size: $base-font-size * 1.5;
+	  margin-bottom: 20px;
+}
+
+h4 {
+	font-size: $base-font-size + 4;
+  margin-bottom: 30px;
+}
+
+p {
+  	margin-bottom: 20px;
+    font-size: $base-font-size;
+    color: $base-font-color;
+    text-align: left;
+}
+
+p strong {
+    font-weight: bold;
+}
+
+.p--below-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: $corporate-blue;
+    text-decoration: none;
+
+    &:hover {
+        color: $corporate-orange;
+    }
+
+}
+
+%button-base {
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+  font-size: $base-font-size + 2;
+}
+
+section ul {
+    padding-left: 10px;
+    text-align: left;
+    list-style-type: disc;
+    font-size: $base-font-size;
+    color: $base-font-color;
+
+    li {
+         margin: 10px;
+    }
+
+    &.clear {
+      list-style-type: none;
+    }
+}
+
+
+blockquote {
+	text-align: center;
+}
+
+
+.orange {
+	  color: $corporate-orange;
+}
+
+.content-container.left {
+  text-align: left;
+}
+
+.content-container .left {
+  text-align: left;
+}
+
+.date {
+  color: gray;
+  font-style: italic;
+}

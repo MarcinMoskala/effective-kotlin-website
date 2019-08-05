@@ -1,0 +1,30 @@
+.flex-container {
+	  @include flexbox();
+		@include flex-flow(row wrap);
+		@include justify-content(center);
+}
+
+.flex-item {
+	  @include flex(1 1);
+}
+
+
+.flex-item--right {
+    @include flex(1 1);
+    @include align-self(center);
+		text-align: left;
+		padding-left: 40px;
+}
+
+
+.flex-item--image-container {
+	@include flex(1 1);
+	@include align-self(center);
+
+	.round-photo {
+	    max-width: 90%;
+	    height: auto;
+	    margin: auto;
+	    border-radius: 50%;
+	}
+}

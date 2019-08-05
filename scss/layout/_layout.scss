@@ -1,0 +1,77 @@
+header {
+	  position: relative;
+	  overflow: hidden;
+}
+
+section {
+	  position: relative;
+	  background-color: $background-color;
+}
+
+section.section--white {
+			background-color: #FFFFFF;
+}
+
+
+.content-container {
+	  margin: 0px auto;
+	  max-width: 1150px;
+	  padding: 80px 80px 80px 80px;
+	  text-align: center;
+}
+
+.content-container.padding-top-bot-0 {
+		padding: 0 80px;
+}
+
+.content-container.small-top-content-container {
+    padding-top: 30px;
+}
+
+
+.content-container.content-container--full-width {
+	max-width: none;
+}
+
+footer {
+		background-color: #B8BCBF;
+		.content-container {
+			  padding-top: 15px;
+			  padding-bottom: 15px;
+			  @include flexbox();
+				@include flex-flow(row wrap);
+		 		@include justify-content(space-between);
+				@include align-items(center);
+
+				p {
+					  padding: 0px;
+					  margin: 0px;
+					  font-size: 12px;
+					  display: inline;
+				}
+		}
+
+		.copywright-container .www-author {
+			  color: #404040;
+			  padding-left: 20px;
+		}
+
+		a {
+			  text-decoration: none;
+			  color: #404040;
+		}
+}
+
+.inline {
+  	display: inline;
+}
+
+
+.fas.big-icon, .fab.big-icon, .far.big-icon {
+    font-size: 60px;
+}
+
+.fas.small-icon, .fab.small-icon, .far.small-icon {
+    font-size: $base-font-size;
+		margin-right: 5px;
+}

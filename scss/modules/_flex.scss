@@ -8,12 +8,23 @@
 	  @include flex(1 1);
 }
 
+.flex-item.right-column {
+	  margin-left: 20px;
+}
+
+.flex-item.left-column {
+	  margin-right: 20px;
+}
 
 .flex-item--right {
     @include flex(1 1);
     @include align-self(center);
-		text-align: left;
-		padding-left: 40px;
+	text-align: left;
+	padding-left: 40px;
+}
+
+.flex-item--right h2 {
+	text-align: left;
 }
 
 
@@ -22,9 +33,12 @@
 	@include align-self(center);
 
 	.round-photo {
-	    max-width: 90%;
-	    height: auto;
-	    margin: auto;
 	    border-radius: 50%;
 	}
+
+	.responsive-img {
+      width: 90%;
+      height: auto;
+      margin: auto;
+    }
 }

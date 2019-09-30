@@ -8,8 +8,12 @@ section {
 	  background-color: $background-color;
 }
 
+section.section--first {
+      margin-top: $menu-height;
+}
+
 section.section--white {
-			background-color: #FFFFFF;
+	   background-color: #FFFFFF;
 }
 
 
@@ -21,11 +25,11 @@ section.section--white {
 }
 
 .content-container.padding-top-bot-0 {
-		padding: 0 80px;
+	   padding: 0 80px;
 }
 
 .content-container.small-top-content-container {
-    padding-top: 30px;
+       padding-top: 30px;
 }
 
 

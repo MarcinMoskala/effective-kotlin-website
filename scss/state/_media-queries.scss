@@ -61,6 +61,10 @@
         font-size: 42px;
     }
 
+    section h2 {
+            font-size: 32px;
+        }
+
     section h3 {
         font-size: 24px;
     }
@@ -81,8 +85,13 @@
     	@include flex-flow(column nowrap);
   }
 
-  .flex-container.row-on-mobile {
-    	@include flex-flow(row nowrap);
+  .flex-container.reverse--on-mobile {
+    	@include flex-flow(column-reverse nowrap);
+  }
+
+  .wiz--on-mobile {
+        margin-bottom: 20px;
+        width: 100%;
   }
 
   .flex-item--image-container .round-photo {
@@ -100,12 +109,24 @@
     margin-top: 20px;
   }
 
+  .flex-item.right-column {
+  	  margin-left: 0px;
+  }
+
+  .flex-item.left-column {
+  	  margin-right: 0px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
     .banner h1 {
     	  font-size: 43px;
     }
+
+    .banner h2 {
+        	  font-size: 30px;
+        }
 
     .banner h3 {
     	  font-size: 23px;
@@ -129,6 +150,10 @@
     section h1 {
       	font-size: 35px;
     }
+
+    section h2 {
+          	font-size: 25px;
+        }
 
     section h3 {
       	font-size: 20px;

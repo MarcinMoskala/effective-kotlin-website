@@ -261,10 +261,12 @@ footer {
   flex: 1 1; }
 
 .flex-item.right-column {
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-bottom: 20px; }
 
 .flex-item.left-column {
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-bottom: 20px; }
 
 .flex-item--right {
   -webkit-box-flex: 1 1;
@@ -309,6 +311,9 @@ footer {
     border-color: #137cb9;
     color: #137cb9;
     text-decoration: none; }
+  .button.center {
+    margin-left: auto;
+    margin-right: auto; }
 
 .button.blue {
   border: solid 2px #137cb9;
@@ -385,7 +390,8 @@ footer {
   section h3 {
     font-size: 24px; }
 
-  section p, section li {
+  section p,
+  section li {
     font-size: 17px; }
 
   section h4 {
@@ -408,7 +414,7 @@ footer {
 
   .wiz--on-mobile {
     margin-bottom: 20px;
-    width: 100%; }
+    width: 80%; }
 
   .flex-item--image-container .round-photo {
     max-width: 40%;
@@ -456,7 +462,8 @@ footer {
   section h3 {
     font-size: 20px; }
 
-  p, li {
+  p,
+  li {
     font-size: 16px; }
 
   .navigation-bar li {
@@ -469,8 +476,7 @@ footer {
     font-size: 14px; }
 
   section .content-container {
-    padding-left: 30px;
-    padding-right: 30px; }
+    padding: 40px 30px 40px 30px; }
 
   footer .content-container {
     padding: 15px 30px 15px 30px; }
@@ -478,7 +484,9 @@ footer {
   .bookmarks.responsive {
     padding: 0px 0px 5px 0px; }
 
-  .fas.big-icon, .fab.big-icon, .far.big-icon {
+  .fas.big-icon,
+  .fab.big-icon,
+  .far.big-icon {
     font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

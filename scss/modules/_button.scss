@@ -1,25 +1,24 @@
 .button {
-		border-radius: 10px;
-		border: solid 2px $corporate-orange;
-		color: $corporate-orange;
-		padding: 15px 15px;
-		@extend %button-base;
-		white-space: nowrap;
+  border-radius: 10px;
+  border: solid 2px $corporate-orange;
+  color: $corporate-orange;
+  padding: 15px 15px;
+  @extend %button-base;
+  white-space: nowrap;
 
-		&:hover {
-			border-color: $corporate-blue;
-			color: $corporate-blue;
-			text-decoration: none;
-		}
+  &:hover {
+    border-color: $corporate-blue;
+    color: $corporate-blue;
+    text-decoration: none;
+  }
 }
 
 .button.blue {
-		border: solid 2px $corporate-blue;
-		color: $corporate-blue;
-		
-		&:hover {
-			border-color: $corporate-orange;
-			color: $corporate-orange;
-		}
-}
+  border: solid 2px $corporate-blue;
+  color: $corporate-blue;
 
+  &:hover {
+    border-color: $corporate-orange;
+    color: $corporate-orange;
+  }
+}

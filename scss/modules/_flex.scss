@@ -1,44 +1,45 @@
 .flex-container {
-	  @include flexbox();
-		@include flex-flow(row wrap);
-		@include justify-content(center);
+  @include flexbox();
+  @include flex-flow(row wrap);
+  @include justify-content(center);
 }
 
 .flex-item {
-	  @include flex(1 1);
+  @include flex(1 1);
 }
 
 .flex-item.right-column {
-	  margin-left: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .flex-item.left-column {
-	  margin-right: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .flex-item--right {
-    @include flex(1 1);
-    @include align-self(center);
-	text-align: left;
-	padding-left: 40px;
+  @include flex(1 1);
+  @include align-self(center);
+  text-align: left;
+  padding-left: 40px;
 }
 
 .flex-item--right h2 {
-	text-align: left;
+  text-align: left;
 }
 
-
 .flex-item--image-container {
-	@include flex(1 1);
-	@include align-self(center);
+  @include flex(1 1);
+  @include align-self(center);
 
-	.round-photo {
-	    border-radius: 50%;
-	}
+  .round-photo {
+    border-radius: 50%;
+  }
 
-	.responsive-img {
-      width: 90%;
-      height: auto;
-      margin: auto;
-    }
+  .responsive-img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
 }

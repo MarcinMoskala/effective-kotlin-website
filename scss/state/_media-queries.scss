@@ -1,102 +1,102 @@
 @media screen and (max-width: 1000px) {
-    .bookmarks .nav-link--padding {
-        padding: 0 9px;
-    }
+  .bookmarks .nav-link--padding {
+    padding: 0 9px;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .bookmarks a {
+    display: none;
+  }
+  .bookmarks a.nav__icon {
+    float: right;
+    display: block;
+  }
+  .bookmarks .nav-link--padding {
+    padding: 10px 10px;
+  }
 
-    .bookmarks a {
-    	 display: none;
-    }
-    .bookmarks a.nav__icon {
-    	 float: right;
-    	  display: block;
-    }
-    .bookmarks .nav-link--padding {
-        padding: 10px 10px;
-    }
-
-    .bookmarks.responsive {
-      	position: relative;
-      	background-color: white;
-    	  border-bottom-left-radius: 20px;
-    	  border-bottom-right-radius: 20px;
-    	  padding: 0px 0px 10px 0px;
+  .bookmarks.responsive {
+    position: relative;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px 0px 10px 0px;
 
     .nav__icon {
-    		position: absolute;
-    		right: 10px;
-    		top: 0;
+      position: absolute;
+      right: 10px;
+      top: 0;
     }
 
-    	   a {
-        		float: none;
-        		display: block;
-        		text-align: left;
-    	   }
+    a {
+      float: none;
+      display: block;
+      text-align: left;
     }
+  }
 
-    .first-bookmark {
-    	  margin-top: 42px;
-    }
+  .first-bookmark {
+    margin-top: 42px;
+  }
 
-    .nav-link--padding {
-    	  padding-bottom: 0px;
-    }
+  .nav-link--padding {
+    padding-bottom: 0px;
+  }
 
-    .banner h1 {
-        font-size: 55px;
-    }
+  .banner h1 {
+    font-size: 55px;
+  }
 
-    .banner h3 {
-        font-size: 30px;
-    }
+  .banner h3 {
+    font-size: 30px;
+  }
 
-    section {
-        padding: 20px 0;
-    }
+  section {
+    padding: 20px 0;
+  }
 
-    section h1 {
-        font-size: 42px;
-    }
+  section h1 {
+    font-size: 42px;
+  }
 
-    section h2 {
-            font-size: 32px;
-        }
+  section h2 {
+    font-size: 32px;
+  }
 
-    section h3 {
-        font-size: 24px;
-    }
+  section h3 {
+    font-size: 24px;
+  }
 
-    section p, section li {
-        font-size: 17px;
-    }
+  section p,
+  section li {
+    font-size: 17px;
+  }
 
-    section h4 {
-        font-size: 18px;
-    }
+  section h4 {
+    font-size: 18px;
+  }
 
-    footer .content-container {
-  		  display: block;
-	}
+  footer .content-container {
+    display: block;
+  }
 
   .flex-container {
-    	@include flex-flow(column nowrap);
+    @include flex-flow(column nowrap);
   }
 
   .flex-container.reverse--on-mobile {
-    	@include flex-flow(column-reverse nowrap);
+    @include flex-flow(column-reverse nowrap);
   }
 
   .wiz--on-mobile {
-        margin-bottom: 20px;
-        width: 100%;
+    margin-bottom: 20px;
+    width: 80%;
   }
 
   .flex-item--image-container .round-photo {
-      max-width: 40%;
-      height: auto;
+    max-width: 40%;
+    height: auto;
   }
 
   .flex-item--right {
@@ -110,86 +110,86 @@
   }
 
   .flex-item.right-column {
-  	  margin-left: 0px;
+    margin-left: 0px;
   }
 
   .flex-item.left-column {
-  	  margin-right: 0px;
+    margin-right: 0px;
   }
-
 }
 
 @media screen and (max-width: 600px) {
-    .banner h1 {
-    	  font-size: 43px;
-    }
+  .banner h1 {
+    font-size: 43px;
+  }
 
-    .banner h2 {
-        	  font-size: 30px;
-        }
+  .banner h2 {
+    font-size: 30px;
+  }
 
-    .banner h3 {
-    	  font-size: 23px;
-    }
+  .banner h3 {
+    font-size: 23px;
+  }
 
-    .button {
-        border: solid 2px #f47421;
-        padding: 10px 21px;
-    }
+  .button {
+    border: solid 2px #f47421;
+    padding: 10px 21px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .banner h1 {
-      	font-size: 37px;
-    }
+  .banner h1 {
+    font-size: 37px;
+  }
 
-    .banner h3 {
-      	font-size: 20px;
-    }
+  .banner h3 {
+    font-size: 20px;
+  }
 
-    section h1 {
-      	font-size: 35px;
-    }
+  section h1 {
+    font-size: 35px;
+  }
 
-    section h2 {
-          	font-size: 25px;
-        }
+  section h2 {
+    font-size: 25px;
+  }
 
-    section h3 {
-      	font-size: 20px;
-    }
+  section h3 {
+    font-size: 20px;
+  }
 
-    p, li {
-        font-size: 16px;
-    }
+  p,
+  li {
+    font-size: 16px;
+  }
 
-    .navigation-bar li {
-        font-size: 14px;
-    }
+  .navigation-bar li {
+    font-size: 14px;
+  }
 
-    .button {
-        font-size: 16px;
-    }
+  .button {
+    font-size: 16px;
+  }
 
-	  .button.button--mini {
-		    font-size: 14px;
-	  }
+  .button.button--mini {
+    font-size: 14px;
+  }
 
-	   section .content-container {
-		    padding-left: 30px;
-		    padding-right: 30px;
-	  }
+  section .content-container {
+    padding: 40px 30px 40px 30px;
+  }
 
-    footer .content-container {
-        padding: 15px 30px 15px 30px;
-    }
+  footer .content-container {
+    padding: 15px 30px 15px 30px;
+  }
 
+  .bookmarks.responsive {
+    padding: 0px 0px 5px 0px;
+  }
 
-	  .bookmarks.responsive {
-        padding: 0px 0px 5px 0px;
-    }
-
-    .fas.big-icon, .fab.big-icon, .far.big-icon {
-        font-size: 40px;
-    }
+  .fas.big-icon,
+  .fab.big-icon,
+  .far.big-icon {
+    font-size: 40px;
+  }
 }

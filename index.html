@@ -1,301 +1,568 @@
-<html lang="en" >
-
-<head>
+<html lang="en">
+  <head>
     <script src="js/tracking.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="images/Kt_Academy_logo.png" />
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css" />
     <script src="js/wow.min.js"></script>
-    <script> new WOW().init(); </script>
-    <meta name="description" content="Effective Kotlin - the book about best practices and efficient Kotlin programming. Each item is presented as a clear rule of thumb, supported by detailed explanations and practical examples. 50 concrete rules on how to write better code.">
-    <meta name="keywords" content="Kotlin, Book, Android, Backened, Effective Kotlin, programming, best practices">
+    <script>
+      new WOW().init();
+    </script>
+    <meta
+      name="description"
+      content="Effective Kotlin - the book about best practices and efficient Kotlin programming. Each item is presented as a clear rule of thumb, supported by detailed explanations and practical examples. 50 concrete rules on how to write better code."
+    />
+    <meta
+      name="keywords"
+      content="Kotlin, Book, Android, Backened, Effective Kotlin, programming, best practices"
+    />
     <title>Effective Kotlin</title>
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@EffectiveKotlin">
-    <meta name="twitter:title" content="Effective Kotlin - best practices">
-    <meta name="twitter:description" content="Effective Kotlin - the book about best practices and efficient Kotlin programming. This is the first book directed to experienced Kotlin developers. It was written to be a complete guide for Kotlin developers on how to become an amazing Kotlin developer.">
-    <meta name="twitter:image" content="https://effectivekotlin.dev/images/Effective_Kotlin_SM.png">
-    <meta name="twitter:image:alt" content="Effective Kotlin">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@EffectiveKotlin" />
+    <meta name="twitter:title" content="Effective Kotlin - best practices" />
+    <meta
+      name="twitter:description"
+      content="Effective Kotlin - the book about best practices and efficient Kotlin programming. This is the first book directed to experienced Kotlin developers. It was written to be a complete guide for Kotlin developers on how to become an amazing Kotlin developer."
+    />
+    <meta
+      name="twitter:image"
+      content="https://effectivekotlin.dev/images/Effective_Kotlin_SM.png"
+    />
+    <meta name="twitter:image:alt" content="Effective Kotlin" />
 
     <meta property="og:title" content="Effective Kotlin - best practices" />
     <meta property="og:type" content="video.movie" />
-    <meta property="og:image" content="https://effectivekotlin.dev/images/Effective_Kotlin_SM.png" />
+    <meta
+      property="og:image"
+      content="https://effectivekotlin.dev/images/Effective_Kotlin_SM.png"
+    />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="1200" />
     <meta property="og:url" content="https://effectivekotlin.dev" />
-    <meta property="og:description" content="Effective Kotlin - the book about best practices and efficient Kotlin programming. This is the first book directed to experienced Kotlin developers. It was written to be a complete guide for Kotlin developers on how to become an amazing Kotlin developer."/>
-</head>
+    <meta
+      property="og:description"
+      content="Effective Kotlin - the book about best practices and efficient Kotlin programming. This is the first book directed to experienced Kotlin developers. It was written to be a complete guide for Kotlin developers on how to become an amazing Kotlin developer."
+    />
+  </head>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSR3Q7R"
-                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <header>
-
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MSR3Q7R"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
       <div class="navigation-bar">
-
-          <nav class="bookmarks" id="bookmarks">
-              <ul>
-                  <li class="inline"><a href="#about" class="nav-link--padding pointer page-scroll first-bookmark">About</a></li>
-                  <li class="inline"><a href="#buy" class="nav-link--padding pointer page-scroll">Buy</a></li>
-                  <li class="inline"><a href="#purpose" class="nav-link--padding pointer page-scroll">Purpose</a></li>
-                  <li class="inline"><a href="#who" class="nav-link--padding pointer page-scroll">To whom</a></li>
-                  <li class="inline"><a href="#parts" class="nav-link--padding pointer page-scroll">Main parts</a></li>
-                  <li class="inline"><a href="#toc" class="nav-link--padding pointer page-scroll">Contents</a></li>
-                  <li class="inline"><a href="#author" class="nav-link--padding pointer page-scroll">Author</a></li>
-                  <li class="inline"><a href="#updates" class="nav-link--padding pointer page-scroll">Updates</a></li>
-                  <li class="inline"><a href="javascript:void(0);" class="nav__icon" onclick="responsiveNavMenu()"> <i class="fas fa-bars"></i> </a> </li>
-              </ul>
-          </nav>
+        <nav class="bookmarks" id="bookmarks">
+          <ul>
+            <li class="inline">
+              <a
+                href="#about"
+                class="nav-link--padding pointer page-scroll first-bookmark"
+                >About</a
+              >
+            </li>
+            <li class="inline">
+              <a href="#buy" class="nav-link--padding pointer page-scroll"
+                >Buy</a
+              >
+            </li>
+            <li class="inline">
+              <a href="#purpose" class="nav-link--padding pointer page-scroll"
+                >Purpose</a
+              >
+            </li>
+            <li class="inline">
+              <a href="#who" class="nav-link--padding pointer page-scroll"
+                >To whom</a
+              >
+            </li>
+            <li class="inline">
+              <a href="#parts" class="nav-link--padding pointer page-scroll"
+                >Main parts</a
+              >
+            </li>
+            <li class="inline">
+              <a href="#toc" class="nav-link--padding pointer page-scroll"
+                >Contents</a
+              >
+            </li>
+            <li class="inline">
+              <a href="#author" class="nav-link--padding pointer page-scroll"
+                >Author</a
+              >
+            </li>
+            <li class="inline">
+              <a href="#updates" class="nav-link--padding pointer page-scroll"
+                >Updates</a
+              >
+            </li>
+            <li class="inline">
+              <a
+                href="javascript:void(0);"
+                class="nav__icon"
+                onclick="responsiveNavMenu()"
+              >
+                <i class="fas fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-  </header>
+    </header>
 
-
-  <section id="about" class="section--first ">
-    <div class="content-container">
+    <section id="about" class="section--first ">
+      <div class="content-container">
         <h1 class="orange" style="margin-bottom: 5px">Effective Kotlin</h1>
         <h2 class="orange">BEST PRACTICES</h2>
         <div class="flex-container reverse--on-mobile">
-          <div class="flex-item">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae elit eget sapien pellentesque placerat. Nulla facilisi. Praesent lacinia elit ac ipsum molestie, eu vestibulum libero laoreet. Duis ligula mi, commodo sed interdum quis, porttitor nec massa. Cras rutrum nibh sed tincidunt tincidunt. Nulla sit amet laoreet eros, ut semper odio. Etiam nec efficitur lacus, non lacinia nisi. Integer varius in nunc quis mollis. Proin eleifend posuere tellus id vestibulum.</p>
-              <p>Maecenas lorem dui, sagittis at neque sed, mollis vehicula urna. Curabitur quis dolor justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque lorem purus. Fusce lobortis urna diam, ac fringilla justo ultrices in. Nulla mattis sit amet ipsum quis lobortis. Duis a sem dapibus, eleifend orci eu, tincidunt ipsum. Sed massa justo, pellentesque iaculis vestibulum id, eleifend a nisi.</p>
+          <div class="flex-item padding-top-20">
+            <p>
+              Kotlin is a powerful and pragmatic language, but it's not enough
+              to know about its features. We also need to know when they should
+              be used and in what way. This book is a guide for Kotlin
+              developers on how to become excellent Kotlin developers. It
+              presents and explains in-depth the best practices for Kotlin
+              development. Each item is presented as a clear rule of thumb,
+              supported by detailed explanations and practical examples.
+            </p>
+            <p>
+              Effective Kotlin provides insights into the idiomatic way of
+              Kotlin development, as well as many general programming best
+              practices and details about advanced Kotlin features like DSL
+              creation, generics, platform types or inline functions and
+              classes. All that for experienced Kotlin developers to get more
+              effective when they use this programming language: to make safe,
+              well designed and efficient code.
+            </p>
+            <p> 
+              <a href="https://kt.academy/static/effectivekotlin-sample.pdf" class="button" target="_blank">
+                Read a free sample
+              </a>
+            </p>
           </div>
-            <div class="flex-item--image-container wiz--on-mobile">
-                <img src="images/Effective_Kotlin_wiz.png" alt="Effective Kotlin book" class="responsive-img">
-            </div>
+          <div class="flex-item--image-container wiz--on-mobile">
+            <img
+              src="images/Effective_Kotlin_wiz.png"
+              alt="Effective Kotlin book"
+              class="responsive-img"
+            />
+          </div>
         </div>
       </div>
-</section>
+    </section>
 
-<section id="buy" class="section--white">
-    <div class="content-container ">
-      <h2 class="orange">Ebook is already available!</h2>
+    <section id="buy" class="section--white">
+      <div class="content-container ">
+        <h2 class="orange">Ebook is already available!</h2>
         <div class="flex-container">
           <div class="flex-item left-column">
-            <h2 class="margin-top-20">Ebook beta version: 15$</h2>
-            <a href="https://leanpub.com/effectivekotlin" class="button">Buy ebook</a>
-              <p class="p--below-button">The price of final version will be 20$. If you buy a beta version now, you will later get a final e-book for free.</p>
+            <h2 class="margin-top-20">Ebook beta version: 20$</h2>
+            <a href="https://leanpub.com/effectivekotlin" class="button"
+              >Buy ebook</a
+            >
           </div>
           <div class="flex-item right-column">
             <h2 class="margin-top-20">Printed book price: 30$</h2>
-            <a href="http://eepurl.com/gy6P1b" class="button" target="_blank">Sign up for waiting list</a>
-            <p class="p--below-button"> Sign up to be notified when the printed book is published.</p>
+            <a href="http://eepurl.com/gy6P1b" class="button" target="_blank"
+              >Sign up for waiting list</a
+            >
+            <p class="p--below-button">
+              Sign up to be notified when the printed book is published.
+            </p>
           </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section id="update" >
-    <div class="content-container">
-      <h2 class="orange">Stay updated</h2>
+    <section id="update">
+      <div class="content-container">
+        <h2 class="orange">Stay updated</h2>
         <div class="flex-container">
           <div class="flex-item">
-            <a href="https://twitter.com/EffectiveKotlin" class="button blue margin-top-20"><i class="fab fa-twitter small-icon"></i>@EffectiveKotlin</a>
+            <a
+              href="https://twitter.com/EffectiveKotlin"
+              class="button blue margin-top-20"
+              ><i class="fab fa-twitter small-icon"></i>@EffectiveKotlin</a
+            >
           </div>
           <div class="flex-item">
-            <a href="https://twitter.com/ktdotacademy" class="button blue margin-top-20"><i class="fab fa-twitter small-icon"></i>@KtDotAcademy</a>
+            <a
+              href="https://twitter.com/ktdotacademy"
+              class="button blue margin-top-20 margin-left-20 margin-right-20"
+              ><i class="fab fa-twitter small-icon"></i>@KtDotAcademy</a
+            >
           </div>
           <div class="flex-item">
-            <a href="http://eepurl.com/diMmGv" class="button blue margin-top-20">Sign up to mailing list</a>
+            <a href="http://eepurl.com/diMmGv" class="button blue margin-top-20"
+              >Sign up to mailing list</a
+            >
           </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section id="purpose" class="section--white">
-    <div class="content-container left">
-      <h1>Purpose of this book</h1>
-        <p>To really unleash the advantages of Kotlin, we need to use it properly. To do so, not only do we need to know about different Standard Library (stdlib) functions but even more, we need a good understanding of Kotlin features, purpose, and design. The main goal of this book is to explain how to use different Kotlin features to achieve safe, readable, scalable, and efficient code. Since this book is written to help developers get better at writing code, it also touches many general rules for programmers. You can find the influence of programming classics like Clean Code [Martin1], Effective Java [EJ], Structure and Implementation of Computer Programs [SICP], Code Complete [CC], and many more. You can also find influence from presentations and Kotlin forums. This book tries to compose as much knowledge about best practices in Kotlin as possible, no matter where it originated from.</p>
-        <p>You can call it a collection of best practices; though it differs from classic "Effective X" books because of Kotlin characteristics. The Effective Java [EJ] book contains many warnings about internal Java problems. In Kotlin such problems are mostly eliminated by the Kotlin team. In contrast to Java, Kotlin is not worried to deprecate something and fix it in the future[^footnote_013_note]. In the worst case, the Kotlin team controls a powerful IDE that can do nearly any migration to a better alternative. Most “Effective X” books also give hints that instead of some function or construct we should use some other. These kind of suggestions are rarely useful in Kotlin as most of them have a warning or hint in IntelliJ. I left only a few of such items. This book is different: it concentrates on a higher level good practices that come from authorities, the Kotlin creators, and from my experience as a developer, consultant, and trainer for international companies worldwide. </p>
-    </div>
-  </section>
+    <section id="purpose" class="section--white">
+      <div class="content-container left">
+        <h1>Purpose of this book</h1>
+        <p>
+          To really unleash the advantages of Kotlin, we need to use it
+          properly. To do so, not only do we need to know about different
+          Standard Library (stdlib) functions but even more, we need a good
+          understanding of Kotlin features, purpose, and design. The main goal
+          of this book is to explain how to use different Kotlin features to
+          achieve safe, readable, scalable, and efficient code. Since this book
+          is written to help developers get better at writing code, it also
+          touches many general rules for programmers. This book tries to compose
+          as much knowledge about best practices in Kotlin as possible. You can
+          call it a collection of best practices.
+        </p>
+      </div>
+    </section>
 
-  <section id="who">
-    <div class="content-container left">
-      <h1> For whom the book is written </h1>
-      <p> This book is not teaching basics. It assumes that you have enough knowledge and skills to do Kotlin development. If you don’t, I recommend starting first from some resource designed for beginners. </p>
-      <p> Effective Kotlin is directed to experienced Kotlin developers. Though I will assume that even experienced developers might not know some features. This is why I explain some concepts like: </p>
-      <ul>
-        <li>Property</li>
-        <li>Platform type</li>
-        <li>Named arguments</li>
-        <li>Property delegation</li>
-        <li>DSL creation</li>
-        <li>Inline classes and functions</li>
-        <li>Tail recursion</li>
-      </ul>
-      <p>I want this book to be a complete guide for Kotlin developers on how to become an amazing Kotlin developer. </p>
-    </div>
-  </section>
+    <section id="who">
+      <div class="content-container left">
+        <h1>For whom the book is written</h1>
+        <p>
+          This book is not teaching basics. It assumes that you have enough
+          knowledge and skills to do Kotlin development. If you don’t, I
+          recommend starting first from some resource designed for beginners.
+        </p>
+        <p>
+          Effective Kotlin is directed to experienced Kotlin developers. Though
+          I will assume that even experienced developers might not know some
+          features. This is why I explain some concepts like:
+        </p>
+        <ul>
+          <li>Property</li>
+          <li>Platform type</li>
+          <li>Named arguments</li>
+          <li>Property delegation</li>
+          <li>DSL creation</li>
+          <li>Inline classes and functions</li>
+          <li>Tail recursion</li>
+        </ul>
+        <p>
+          I want this book to be a complete guide for Kotlin developers on how
+          to become an amazing Kotlin developer.
+        </p>
+      </div>
+    </section>
 
-  <section id="parts" class="section--white">
-    <div class="content-container">
-      <h1>Main parts of the book</h1>
-      <p>Concepts in the book are grouped into three parts. Each part is divided into chapters, which are subdivided into item. Those parts are:</p>
-      <h2 class="orange left">Good code</h2>
-      <p>More general rules about making good quality code. This part is for every Kotlin developer, no matter how big their project is. It starts from items about safety and later talks about readability. It is not a coincidence that the first chapter is dedicated to safety. I believe that program correctness generally is of the highest priority, and safety is an important component. Readability is another item because the code is not only for a compiler but also for programmers. Even when we work alone, we want code that is readable and self-explanatory.</p>
-      <h2 class="orange left">Code design</h2>
-       <p>This section is for developers creating a project together with other developers, or creating libraries. It is about conventions and setting contracts. It will, in the end, reflect on readability and safety, but all in terms of correct code design. This part is a bit more abstract at the beginning, but thanks to that it can explore topics that are often omitted in books about code quality. This section is also about preparing our code for growth. A lot of items are about being ready for changes in the future. Therefore it is an especially important section for developers creating large projects.</p>
-       <h2 class="orange left">Efficiency</h2>
-       <p>This section is for developers that care about code efficiency. Most of the rules presented here do not come at the cost of development time or readability, so they are suitable for everyone. However, they are particularly important for developers implementing high-performance applications, libraries, or applications for millions.</p>
-    </div>
-  </section>
+    <section id="parts" class="section--white">
+      <div class="content-container">
+        <h1>Main parts of the book</h1>
+        <p>
+          Concepts in the book are grouped into three parts. Each part is
+          divided into chapters, which are subdivided into item. Those parts
+          are:
+        </p>
+        <h2 class="orange left">Good code</h2>
+        <p>
+          More general rules about making good quality code. This part is for
+          every Kotlin developer, no matter how big their project is. It starts
+          from items about safety and later talks about readability. It is not a
+          coincidence that the first chapter is dedicated to safety. I believe
+          that program correctness generally is of the highest priority, and
+          safety is an important component. Readability is another item because
+          the code is not only for a compiler but also for programmers. Even
+          when we work alone, we want code that is readable and
+          self-explanatory.
+        </p>
+        <h2 class="orange left">Code design</h2>
+        <p>
+          This section is for developers creating a project together with other
+          developers, or creating libraries. It is about conventions and setting
+          contracts. It will, in the end, reflect on readability and safety, but
+          all in terms of correct code design. This part is a bit more abstract
+          at the beginning, but thanks to that it can explore topics that are
+          often omitted in books about code quality. This section is also about
+          preparing our code for growth. A lot of items are about being ready
+          for changes in the future. Therefore it is an especially important
+          section for developers creating large projects.
+        </p>
+        <h2 class="orange left">Efficiency</h2>
+        <p>
+          This section is for developers that care about code efficiency. Most
+          of the rules presented here do not come at the cost of development
+          time or readability, so they are suitable for everyone. However, they
+          are particularly important for developers implementing
+          high-performance applications, libraries, or applications for
+          millions.
+        </p>
+      </div>
+    </section>
 
-  <section id="toc">
-    <div class="content-container left">
-      <h1>Table of contents</h1>
+    <section id="toc">
+      <div class="content-container left">
+        <h1>Table of contents</h1>
         <h4>Introduction: Be pragmatic</h4>
         <h2 class="orange">Part 1: Good code</h2>
         <h3>Chapter 1: Safety</h3>
-          <ul class="clear">
-            <li>Item 1: Limit mutability</li>
-            <li>Item 2: Minimize the scope of variables</li>
-            <li>Item 3: Eliminate platform types as soon as possible</li>
-            <li>Item 4: Do not expose inferred types</li>
-            <li>Item 5: Specify your expectations on arguments and state</li>
-            <li>Item 6: Prefer standard errors to custom ones</li>
-            <li>Item 7: Prefer null or Failure result when the lack of result is possible</li>
-            <li>Item 8: Handle nulls properly</li>
-            <li>Item 9: Close resources with use</li>
-            <li>Item 10: Write unit tests</li>
-          </ul>
+        <ul class="clear">
+          <li>Item 1: Limit mutability</li>
+          <li>Item 2: Minimize the scope of variables</li>
+          <li>Item 3: Eliminate platform types as soon as possible</li>
+          <li>Item 4: Do not expose inferred types</li>
+          <li>Item 5: Specify your expectations on arguments and state</li>
+          <li>Item 6: Prefer standard errors to custom ones</li>
+          <li>
+            Item 7: Prefer null or Failure result when the lack of result is
+            possible
+          </li>
+          <li>Item 8: Handle nulls properly</li>
+          <li>Item 9: Close resources with use</li>
+          <li>Item 10: Write unit tests</li>
+        </ul>
         <h3>Chapter 2: Readability</h3>
-          <ul class="clear">
-            <li>Item 11: Design for readability</li>
-            <li>Item 12: Operator meaning should be clearly consistent with its function name </li>
-            <li>Item 12: Operator meaning should be clearly consistent with its function name</li>
-            <li>Item 13: Avoid returning or operating on Unit?</li>
-            <li>Item 14: Specify the variable type when it is not clear</li>
-            <li>Item 14: Specify the variable type when it is not clear</li>
-            <li>Item 15: Consider referencing receivers explicitly</li>
-            <li>Item 16: Properties should represent state, not behavior</li>
-            <li>Item 16: Properties should represent state, not behavior</li>
-            <li>Item 17: Consider naming arguments</li>
-            <li>Item 18: Respect coding conventions</li>
-          </ul>
+        <ul class="clear">
+          <li>Item 11: Design for readability</li>
+          <li>
+            Item 12: Operator meaning should be clearly consistent with its
+            function name
+          </li>
+          <li>
+            Item 12: Operator meaning should be clearly consistent with its
+            function name
+          </li>
+          <li>Item 13: Avoid returning or operating on Unit?</li>
+          <li>Item 14: Specify the variable type when it is not clear</li>
+          <li>Item 14: Specify the variable type when it is not clear</li>
+          <li>Item 15: Consider referencing receivers explicitly</li>
+          <li>Item 16: Properties should represent state, not behavior</li>
+          <li>Item 16: Properties should represent state, not behavior</li>
+          <li>Item 17: Consider naming arguments</li>
+          <li>Item 18: Respect coding conventions</li>
+        </ul>
         <h2 class="orange">Part 2: Code design</h2>
         <h3>Chapter 3: Reusability</h3>
-          <ul class="clear">
-            <li>Item 19: Do not repeat knowledge</li>
-            <li>Item 20: Do not repeat common algorithms</li>
-            <li>Item 21: Use property delegation to extract common property patterns</li>
-            <li>Item 22: Reuse between different platforms by extracting common modules</li>
-          </ul>
+        <ul class="clear">
+          <li>Item 19: Do not repeat knowledge</li>
+          <li>Item 20: Do not repeat common algorithms</li>
+          <li>
+            Item 21: Use property delegation to extract common property patterns
+          </li>
+          <li>
+            Item 22: Reuse between different platforms by extracting common
+            modules
+          </li>
+        </ul>
         <h3>Chapter 4: Abstraction design</h3>
-          <ul class="clear">
-            <li>Item 23: Each function should be written in terms of a single level of abstraction</li>
-            <li>Item 24: Use abstraction to protect code against changes</li>
-            <li>Item 25: Specify API stability</li>
-            <li>Item 26: Consider wrapping external API</li>
-            <li>Item 27: Minimize elements visibility</li>
-            <li>Item 28: Define contract with documentation</li>
-            <li>Item 29: Respect abstraction contracts</li>
-          </ul>
+        <ul class="clear">
+          <li>
+            Item 23: Each function should be written in terms of a single level
+            of abstraction
+          </li>
+          <li>Item 24: Use abstraction to protect code against changes</li>
+          <li>Item 25: Specify API stability</li>
+          <li>Item 26: Consider wrapping external API</li>
+          <li>Item 27: Minimize elements visibility</li>
+          <li>Item 28: Define contract with documentation</li>
+          <li>Item 29: Respect abstraction contracts</li>
+        </ul>
         <h3>Chapter 5: Object creation</h3>
-          <ul class="clear">
-            <li>Item 30: Consider factory functions instead of constructors</li>
-            <li>Item 31: Consider a primary constructor with named optional arguments</li>
-            <li>Item 32: Consider defining a DSL for complex object creation</li>
-          </ul>
+        <ul class="clear">
+          <li>Item 30: Consider factory functions instead of constructors</li>
+          <li>
+            Item 31: Consider a primary constructor with named optional
+            arguments
+          </li>
+          <li>Item 32: Consider defining a DSL for complex object creation</li>
+        </ul>
         <h3>Chapter 6: Class design</h3>
-          <ul class="clear">
-            <li>Item 33: Prefer composition over inheritance</li>
-            <li>Item 34: Use the data modifier to represent a bundle of data</li>
-            <li>Item 35: Use function types instead of interfaces to pass operations and actions</li>
-            <li>Item 36: Prefer class hierarchies to tagged classes</li>
-            <li>Item 37: Respect the contract of equals</li>
-            <li>Item 38: Respect the contract of hashCode</li>
-            <li>Item 39: Respect the contract of compareTo</li>
-            <li>Item 40: Consider extracting non-essential parts of your API into extensions</li>
-            <li>Item 41: Avoid member extensions</li>
-          </ul>
+        <ul class="clear">
+          <li>Item 33: Prefer composition over inheritance</li>
+          <li>Item 34: Use the data modifier to represent a bundle of data</li>
+          <li>
+            Item 35: Use function types instead of interfaces to pass operations
+            and actions
+          </li>
+          <li>Item 36: Prefer class hierarchies to tagged classes</li>
+          <li>Item 37: Respect the contract of equals</li>
+          <li>Item 38: Respect the contract of hashCode</li>
+          <li>Item 39: Respect the contract of compareTo</li>
+          <li>
+            Item 40: Consider extracting non-essential parts of your API into
+            extensions
+          </li>
+          <li>Item 41: Avoid member extensions</li>
+        </ul>
         <h2 class="orange">Part 3: Efficiency</h2>
         <h3>Chapter 7: Make it cheap</h3>
-          <ul class="clear">
-            <li>Item 42: Avoid unnecessary object creation</li>
-            <li>Item 43: Use inline modifier for functions with parameters of functional types</li>
-            <li>Item 44: Consider using inline classes</li>
-            <li>Item 45: Eliminate obsolete object references</li>
-          </ul>
+        <ul class="clear">
+          <li>Item 42: Avoid unnecessary object creation</li>
+          <li>
+            Item 43: Use inline modifier for functions with parameters of
+            functional types
+          </li>
+          <li>Item 44: Consider using inline classes</li>
+          <li>Item 45: Eliminate obsolete object references</li>
+        </ul>
         <h3>Chapter 8: Efficient collection processing</h3>
-          <ul class="clear">
-            <li>Item 46: Prefer Sequence for big collections with more than one processing step</li>
-            <li>Item 47: Limit number of operations</li>
-            <li>Item 48: Consider Arrays with primitives for performance-critical processing</li>
-            <li>Item 49: Consider using mutable collections</li>
-          </ul>
+        <ul class="clear">
+          <li>
+            Item 46: Prefer Sequence for big collections with more than one
+            processing step
+          </li>
+          <li>Item 47: Limit number of operations</li>
+          <li>
+            Item 48: Consider Arrays with primitives for performance-critical
+            processing
+          </li>
+          <li>Item 49: Consider using mutable collections</li>
+        </ul>
         <h4>Dictionary</h4>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section id="author" class="section--white">
-    <div class="content-container">
-      <h1> The Author </h1>
-      <div class="flex-container">
-        <div class="flex-item--image-container">
-            <img class="round-photo responsive-img wow zoomIn" src="images/Marcin_Moskala.jpg" alt="Marcin Moskała - Trainer in Kt. Academy">
-        </div>
-        <div class="flex-item--right">
+    <section id="author" class="section--white">
+      <div class="content-container">
+        <h1>The Author</h1>
+        <div class="flex-container">
+          <div class="flex-item--image-container">
+            <img
+              class="round-photo responsive-img wow zoomIn"
+              src="images/Marcin_Moskala.jpg"
+              alt="Marcin Moskała - Trainer in Kt. Academy"
+            />
+          </div>
+          <div class="flex-item--right">
             <h2 class="orange">Marcin Moskała</h2>
             <div class="social-media-container">
-                <a href="https://github.com/MarcinMoskala"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/marcinmoskala"><i class="fab fa-twitter"></i></a>
-                <a href="https://medium.com/@marcinmoskala"><i class="fab fa-medium-m"></i></a>
-                <a href="https://marcinmoskala.com/"> <i class="fas fa-globe"></i></a>
+              <a href="https://github.com/MarcinMoskala"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://twitter.com/marcinmoskala"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://medium.com/@marcinmoskala"
+                ><i class="fab fa-medium-m"></i
+              ></a>
+              <a href="https://marcinmoskala.com/">
+                <i class="fas fa-globe"></i
+              ></a>
             </div>
-            <p class="margin-top-20">Marcin Moskała is an experienced Android developer, teacher, and <a href="https://www.jetbrains.com/company/partners/#countries=Poland&profession=TrainingPartner&speciality=Kotlin&technologies=Kotlin"> an official Jetbrains' Kotlin training partner</a>. He is the founder of <a href="https://kt.academy"> Kt. Academy</a>, author of the book <a href="https://www.packtpub.com/application-development/android-development-kotlin>"> "Android Development with Kotlin"</a>, and an active programming community member. He is also the main author on <a href="https://blog.kotlin-academy.com"> the biggest medium publication about Kotlin </a> and a speaker invited to many programming conferences.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="buy">
-      <div class="content-container ">
-          <h2 class="orange">Ebook is already available!</h2>
-          <div class="flex-container">
-              <div class="flex-item left-column">
-                  <h2 class="margin-top-20">Ebook beta version: 15$</h2>
-                  <a href="https://leanpub.com/effectivekotlin" class="button">Buy ebook</a>
-                  <p class="p--below-button">The price of final version will be 20$. If you buy a beta version now, you will later get a final e-book for free.</p>
-              </div>
-              <div class="flex-item right-column">
-                  <h2 class="margin-top-20">Printed book price: 30$</h2>
-                  <a href="http://eepurl.com/gy6P1b" class="button" target="_blank">Sign up for waiting list</a>
-                  <p class="p--below-button"> Sign up to be notified when the printed book is published.</p>
-              </div>
+            <p class="margin-top-20">
+              Marcin Moskała is an experienced Android developer and Kotlin
+              Trainer. He is the founder of
+              <a href="https://kt.academy"> Kt. Academy</a>,
+              <a
+                href="https://www.jetbrains.com/company/partners/#countries=Poland&profession=TrainingPartner&speciality=Kotlin&technologies=Kotlin"
+              >
+                an official Jetbrains' Kotlin training partner</a
+              >
+              and author of the book
+              <a
+                href="https://www.packtpub.com/application-development/android-development-kotlin>"
+              >
+                "Android Development with Kotlin"</a
+              >. He is also the main author on
+              <a href="https://blog.kotlin-academy.com">
+                the biggest medium publication about Kotlin </a
+              >, a speaker at many programming conferences, and programming
+              library creator and contributor.
+            </p>
           </div>
-      </div>
-  </section>
-
-  <section id="updates" class="section--white">
-    <div class="content-container left">
-      <h1>Updates</h1>
-        <div class="update-without-image">
-            <h2 class="orange left">Alpha testing</h2>
-            <p class="date">26 July 2019</p>
-            <p>Alpha testing started today - reviewers are reading the beta version of the book and giving final suggestions. It means that Effective Kotlin should be published within two months.</p>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <footer>
+    <section id="buy">
       <div class="content-container">
-          <p class="mail-contact"> Contact Us: <a href="mailto:effective@marcinmoskala.com">effective@marcinmoskala.com</a></p>
-          <div class="copywright-container">
-              <p> &copy; Marcin Moskała 2019 </p>
-              <p class="www-author"> by <a href="mailto:markiewicz.maja@gmail.com">Maja Markiewicz</a></p>
+        <h2 class="orange">Ebook is already available!</h2>
+        <div class="flex-container">
+          <div class="flex-item left-column">
+            <h2 class="margin-top-20">Ebook beta version: 20$</h2>
+            <a href="https://leanpub.com/effectivekotlin" class="button"
+              >Buy ebook</a
+            >
           </div>
+          <div class="flex-item right-column">
+            <h2 class="margin-top-20">Printed book price: 30$</h2>
+            <a href="http://eepurl.com/gy6P1b" class="button" target="_blank"
+              >Sign up for waiting list</a
+            >
+            <p class="p--below-button">
+              Sign up to be notified when the printed book is published.
+            </p>
+          </div>
+        </div>
       </div>
-  </footer>
+    </section>
 
+    <section id="updates" class="section--white">
+      <div class="content-container left">
+        <h1>Updates</h1>
+        <div class="update-without-image">
+          <h2 class="orange left">New items</h2>
+          <p class="date">14 October 2019</p>
+          <p>
+            Generics are important for effective Kotlin development, and yet many experienced developers have trouble using them. That's is why we just introduced three new items dedicated to generics in Kotlin:
+<ul>
+  <li>Item 22: Use generics when implementing common algorithms</li>
+  <li>Item 23: Avoid shadowing type parameters</li>
+  <li>Item 24: Consider variance for generic types</li>
+</ul>
+          </p>
+        </div>
+        <div class="update-without-image">
+          <h2 class="orange left">Beta version available!</h2>
+          <p class="date">26 August 2019</p>
+          <p>
+            The book is finally published! It took a lot of time and energy, but
+            Effective Kotlin is finally available in e-book.
+          </p>
+        </div>
+        <div class="update-without-image">
+          <h2 class="orange left">Alpha testing</h2>
+          <p class="date">26 July 2019</p>
+          <p>
+            Alpha testing started today - reviewers are reading the beta version
+            of the book and giving final suggestions. It means that Effective
+            Kotlin should be published within two months.
+          </p>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <footer>
+      <div class="content-container">
+        <p class="mail-contact">
+          Contact Us:
+          <a href="mailto:effective@marcinmoskala.com"
+            >effective@marcinmoskala.com</a
+          >
+        </p>
+        <div class="copywright-container">
+          <p>&copy; Marcin Moskała 2019</p>
+          <p class="www-author">
+            by <a href="mailto:markiewicz.maja@gmail.com">Maja Markiewicz</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
